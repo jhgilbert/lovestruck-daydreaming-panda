@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Text:</b>
-  <%= @compliment.text %>
-</p>
-
+<div id="panda">
+	<div id="pandatext">
+		<%= @compliment.text %>
+	</div>
+</div>
 
 <%= link_to 'Edit', edit_compliment_path(@compliment) %> |
 <%= link_to 'Back', compliments_path %>
