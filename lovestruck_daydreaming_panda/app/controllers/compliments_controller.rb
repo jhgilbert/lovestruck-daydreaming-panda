@@ -25,6 +25,9 @@ class ComplimentsController < ApplicationController
   # GET /compliments/new.json
   def new
     @compliment = Compliment.new
+    if @compliment.save
+      redirect_to compliment_show_path
+    end
 
     respond_to do |format|
       format.html # new.html.erb
