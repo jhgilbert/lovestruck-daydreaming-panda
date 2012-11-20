@@ -1,4 +1,6 @@
 LovestruckDaydreamingPanda::Application.routes.draw do
+  resources :compliments
+
   get "home/index"
   root :to => 'home#index'
 
